@@ -1,0 +1,10 @@
+{
+	"name": "DragToSave",
+	"version": "0.1",
+	"description": "A simple extension that allows you to save images by dragging them anywhere on a page.",
+	 "content_scripts": [ {
+      "js": [ "dts.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "manifest_version": 2
+}
