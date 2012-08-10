@@ -1,10 +1,20 @@
 {
-	"name": "DragToSave",
-	"version": "0.1",
+	"name": "DragToSaveImages",
+	"version": "0.0.2",
+	"manifest_version": 2,
+	"default_locale": "en",
 	"description": "A simple extension that allows you to save images by dragging them anywhere on a page.",
-	 "content_scripts": [ {
-      "js": [ "dts.js" ],
-      "matches": [ "http://*/*", "https://*/*" ]
-   } ],
-   "manifest_version": 2
+	"content_scripts": [
+		{
+			"js": ["dts.js"],
+			"matches": ["http://*/*", "https://*/*"]
+		}
+	],
+	"offline_enabled": true,
+	"minimum_chrome_version": "19",
+	"icons": {
+		"16": "DTSicon16.png",
+		"48": "DTSicon48.png",
+		"128": "DTSicon128.png"
+	}
 }
